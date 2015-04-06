@@ -2,6 +2,10 @@ import fluxMixin from '../fluxMixin';
 import { Flummox, Store, Actions } from '../../Flux';
 import addContext from './addContext';
 import sinon from 'sinon';
+import chai from 'chai';
+import chaiAsPromised from 'chai-as-promised';
+chai.use(chaiAsPromised);
+const expect = chai.expect;
 
 import React from 'react/addons';
 const { PropTypes } = React;

@@ -8,7 +8,9 @@ module.exports = function(config) {
     files: [
     // all files ending in "_test"
     'src/__tests__/*-test.js',
-    'src/__tests__/**/*-test.js'
+    'src/__tests__/**/*-test.js',
+    'src/addons/__tests__/*-test.js',
+    'src/addons/__tests__/**/*-test.js'
     // each file acts as entry point for the webpack configuration
     ],
 
@@ -22,7 +24,9 @@ module.exports = function(config) {
     preprocessors: {
       // add webpack as preprocessor
       'src/__tests__/*-test.js': ['webpack'],
-      'src/__tests__/**/*-test.js': ['webpack']
+      'src/__tests__/**/*-test.js': ['webpack'],
+      'src/addons/__tests__/*-test.js': ['webpack'],
+      'src/addons/__tests__/**/*-test.js': ['webpack']
     },
 
     webpack: {

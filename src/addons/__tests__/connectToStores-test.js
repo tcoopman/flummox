@@ -4,6 +4,10 @@ import { Actions, Store, Flummox } from '../../Flux';
 import React from 'react/addons';
 const { PropTypes } = React;
 const { TestUtils } = React.addons;
+import chai from 'chai';
+import chaiAsPromised from 'chai-as-promised';
+chai.use(chaiAsPromised);
+const expect = chai.expect;
 
 class TestActions extends Actions {
   getSomething(something) {
