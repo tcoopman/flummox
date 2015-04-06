@@ -34,19 +34,19 @@
     "eslint": "~0.18.0",
     "istanbul": "0.3.7",
     "jsdom": "~4.0.5",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-mocha": "^0.1.10",
+    "karma-webpack": "^1.5.0",
     "mocha": "2.2.1",
     "react": "0.13.x",
-    "sinon": "1.14.0",
+    "sinon": "git://github.com/cjohansen/Sinon.JS.git#sinon-2.0",
     "source-map-support": "0.2.10",
     "webpack": "1.7.3"
   },
   "dependencies": {
     "eventemitter3": "~0.1.6",
     "flux": "~2.0.1",
-    "karma": "^0.12.31",
-    "karma-chrome-launcher": "^0.1.7",
-    "karma-mocha": "^0.1.10",
-    "karma-webpack": "^1.5.0",
     "object-assign": "~2.0.0",
     "uniqueid": "~0.1.0"
   }

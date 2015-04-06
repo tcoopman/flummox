@@ -43,8 +43,7 @@ module.exports = function(config) {
 
       module: {
         loaders: [
-          { test: /sinon.*\.js$/, loader: 'imports?define=>false'},
-          { test: /\.js$/, loaders: ['babel-loader?stage=0&loose=all'], exclude: /node_modules/ }
+          { test: /\.js$/, loaders: ['babel-loader?stage=0&loose=all&optional=runtime'], exclude: /node_modules/ }
         ]
       }
     },
